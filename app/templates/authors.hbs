@@ -1,12 +1,18 @@
 <div id="main">  
     <div id="issue-desc" class="bg-blend">
         <span>New Writing By</span>
-        {{#each model as |author|}}
-        <article>
-            <h3>{{author.name}}</h3>
-            <span>{{author.bio}}</span>
-        </article>
-        {{/each}}
+        <ul id="contributors" class="nav-ul">
+            {{#each model as |author|}}
+            <li>{{author.name}}
+                {{!--<article>--}}
+                    {{!--<h3>{{author.name}}</h3>
+                    <span>{{author.bio}}</span>--}}
+                {{!--</article>--}}
+            </li>
+            {{/each}}
+
+
+        </ul>
         {{!--<ul id="contributors" class="nav-ul">
             {{#each model as |author|}}
             <li>
