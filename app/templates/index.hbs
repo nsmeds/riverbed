@@ -1,1 +1,9 @@
 {{outlet}}
+
+<div id="main-content">
+    {{#each model as |post|}}
+        {{#post-item}}
+            {{post.content}}
+        {{/post-item}}
+    {{/each}}
+</div>
