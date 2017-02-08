@@ -3,24 +3,9 @@
         <span>New Writing By</span>
         <ul id="contributors" class="nav-ul">
             {{#each model as |author|}}
-            <li>{{author.name}}
-                {{!--<article>--}}
-                    {{!--<h3>{{author.name}}</h3>
-                    <span>{{author.bio}}</span>--}}
-                {{!--</article>--}}
-            </li>
+            <a href="#"><li>{{author.name}}</li></a>
             {{/each}}
-
-
         </ul>
-        {{!--<ul id="contributors" class="nav-ul">
-            {{#each model as |author|}}
-            <li>
-                <span>Name: </span>{{author.name}}
-                <span>Bio: </span>{{author.bio}}
-            </li>
-            {{/each}}
-        </ul>--}}
     </div>  
     <div id="main-content">
     </div>
