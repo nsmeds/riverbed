@@ -1,0 +1,24 @@
+<div class="menu-item">
+        <form class="form new-post-form">
+        <h5>New Post</h5>
+        <label>Title: {{input type='text' value=title}}</label>
+        <label>
+            Author: 
+            {{#x-select value=authors.name action="selectAuthor" as |xs|}}
+                {{#each model.authors as |author|}}
+                    {{#xs.option value=author.name}}{{author.name}}{{/xs.option}}
+                {{/each}}
+            {{/x-select}}
+        </label>
+        <label>
+            Issue: 
+            {{#x-select value=issues.title action="selectIssue" as |xs|}}
+                {{#each model.issues as |issue|}}
+                    {{#xs.option value=issue.title}}{{issue.title}}{{/xs.option}}
+                {{/each}}
+            {{/x-select}}
+        </label>
+        <label>Content: {{textarea type='text' value=content}}</label>
+        <button class="button">Submit</button>
+    </form>
+</div>

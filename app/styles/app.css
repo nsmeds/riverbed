@@ -234,7 +234,9 @@ a:active {
 }
 
 .form input,
-.form textarea {
+.form textarea,
+select,
+button {
   align-self: center;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -260,6 +262,12 @@ a:active {
   background-color: hsla(0,100%,100%,0.3);
   border-color: transparent;
   box-shadow: inset 1 5px 5px -5px hsla(190,10%,10%,1);
+}
+
+.new-post-form {
+  align-items: flex-end;
+  padding-right: 25%;
+  padding-left: 25%;
 }
 
 /**** Footer Styles ****/
