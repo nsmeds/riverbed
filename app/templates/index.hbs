@@ -1,7 +1,9 @@
 {{outlet}}
-
+<div class="menu-item">
+    {{#new-post newPost=posts authors=authors issues=issues posts=posts createPost="createPost"}}{{/new-post}}
+</div>
 <div id="main-content">
-    {{#each model as |post|}}
+    {{#each posts as |post|}}
         {{#post-item post=post}}
             {{post.text}}
         {{/post-item}}

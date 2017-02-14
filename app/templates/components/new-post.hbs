@@ -3,16 +3,16 @@
     <label>Title: {{input type='text' value=newPost.title}}</label>
     <label>
         Author: 
-        {{#x-select value=newPost.authors.id action="selectAuthor" as |xs|}}
-            {{#each model.authors as |author|}}
+        {{#x-select action="selectAuthor" as |xs|}}
+            {{#each authors as |author|}}
                 {{#xs.option value=newPost.author.id}}{{author.name}}{{/xs.option}}
             {{/each}}
         {{/x-select}}
     </label>
     <label>
         Issue: 
-        {{#x-select value=newPost.issues.id action="selectIssue" as |xs|}}
-            {{#each model.issues as |issue|}}
+        {{#x-select action="selectIssue" as |xs|}}
+            {{#each issues as |issue|}}
                 {{#xs.option value=newPost.issue.id}}{{issue.title}}{{/xs.option}}
             {{/each}}
         {{/x-select}}

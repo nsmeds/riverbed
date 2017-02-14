@@ -9,11 +9,11 @@ export default Ember.Component.extend({
     //     });
     // }, 
     actions: {
-        selectAuthor(value) {
-            this.set('newPost.author', value);
+        selectAuthor(value, event) {
+            this.set('selection', value);
         },
-        selectIssue(value) {
-            this.set('newPost.issue', value);
+        selectIssue(value, event) {
+            this.set('selection', value);
         },
         createPost(model) {
             console.log('model argument', model);
