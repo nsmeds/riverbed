@@ -4,6 +4,6 @@ export default DS.Model.extend({
     title: DS.attr(),
     author: DS.attr(),
     issue: DS.attr(),
-    content: DS.attr(),
+    text: DS.attr(),
     bio: DS.attr()
 });
